@@ -13,9 +13,10 @@ Please follow the install instructions at http://vagrantup.com/. In summary:
 2. Install Vagrant (http://downloads.vagrantup.com/)
 3. Clone this project
 4. Go to the project root directory
-5. Type 
+5. Type:
 ```
 vagrant up
+```
 
 ## What it Does
 
