@@ -23,15 +23,9 @@ sh.addShardTag("shard0002", "Japan");
 //collections are assigned to tagged shards based on a range with upper and lower bounds, so
 //using an alphabetic name will not allow us to reliably target countries to specific tags
 //Alternative is to use alpha names, and have a single-country tag range 
-sh.addTagRange("test.persons", { countryCode: "0" }, { countryCode: "50" }, "NA");
-sh.addTagRange("test.persons", { countryCode: "50" }, { countryCode: "150" }, "EU");
-sh.addTagRange("test.persons", { countryCode: "150" }, { countryCode: "151" }, "Japan");
-
-//single-country tag range method (WILL THIS WORK?)
-//sh.addTagRange("test.persons", { countryCode: "USA" }, { countryCode: "USA" }, "NA");
-//sh.addTagRange("test.persons", { countryCode: "Canada" }, { countryCode: "Canada" }, "NA");
-//sh.addTagRange("test.persons", { countryCode: "UK" }, { countryCode: "UK" }, "EU");
-//sh.addTagRange("test.persons", { countryCode: "Japan" }, { countryCode: "Japan" }, "Japan");
+sh.addTagRange("test.persons", { countryCode: 0 }, { countryCode: 100 }, "NA");
+sh.addTagRange("test.persons", { countryCode: 100 }, { countryCode: 200 }, "EU");
+sh.addTagRange("test.persons", { countryCode: 200 }, { countryCode: 300 }, "Japan");
 
 //Set chunk size
 //switch to the 'Config' database
