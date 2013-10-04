@@ -17,7 +17,6 @@ Vagrant.configure("2") do |config|
     shard01.vm.provision "puppet" do |puppet|
       puppet.manifests_path = "manifests"
       puppet.manifest_file  = "sharding-playground.pp"
-      puppet.module_path = "modules"
     end
   end
 
@@ -33,7 +32,6 @@ Vagrant.configure("2") do |config|
     shard02.vm.provision "puppet" do |puppet|
       puppet.manifests_path = "manifests"
       puppet.manifest_file  = "sharding-playground.pp"
-      puppet.module_path = "modules"
     end
   end
 
@@ -49,7 +47,6 @@ Vagrant.configure("2") do |config|
     shard03.vm.provision "puppet" do |puppet|
       puppet.manifests_path = "manifests"
       puppet.manifest_file  = "sharding-playground.pp"
-      puppet.module_path = "modules"
     end
   end
   
@@ -65,7 +62,6 @@ Vagrant.configure("2") do |config|
     configsrv.vm.provision "puppet" do |puppet|
       puppet.manifests_path = "manifests"
       puppet.manifest_file  = "configserver-playground.pp"
-      puppet.module_path = "modules"
     end
   end
 end
