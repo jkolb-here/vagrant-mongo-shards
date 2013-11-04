@@ -9,11 +9,12 @@ This is forked from [BryanDonovan/vagrant-mongo-shards](https://github.com/Bryan
 
 Please follow the install instructions at http://vagrantup.com/. In summary:
 
-1. Install Virtualbox (https://www.virtualbox.org/wiki/Downloads)
-2. Install Vagrant (http://downloads.vagrantup.com/)
-3. Clone this project
-4. Go to the project root directory
-5. Type:
+1. Make sure the VT-x feature is enabled in the BIOS settings.
+2. Install Virtualbox (https://www.virtualbox.org/wiki/Downloads)
+3. Install Vagrant (http://downloads.vagrantup.com/)
+4. Clone this project
+5. Go to the project root directory
+6. Type:
 ```
 vagrant up
 ```
