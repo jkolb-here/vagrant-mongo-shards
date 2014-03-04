@@ -28,7 +28,7 @@ file { '/etc/apt/sources.list.d/10gen.list':
 }
 
 exec { 'add-10genkey':
-  command => '/usr/bin/apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10 && /usr/bin/apt-get update && touch /home/vagrant/updated',
+  command => '/usr/bin/apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 && /usr/bin/apt-get update && touch /home/vagrant/updated',
   path    => '/usr/local/bin/:/bin/:/usr/bin/',
   creates => '/home/vagrant/updated',
   require => File['/etc/apt/sources.list.d/10gen.list'],
